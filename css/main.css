@@ -6,7 +6,7 @@
 
 .article {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
 .intro {
@@ -23,6 +23,13 @@
     color:cornsilk;
     text-align: center;
     margin-right: 220px;
+}
+
+.board_Article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
