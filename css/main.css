@@ -28,7 +28,12 @@
 .board_Article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.innerArticle {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
