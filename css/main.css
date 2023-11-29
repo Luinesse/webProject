@@ -1,12 +1,28 @@
+@keyframes up {
+    0% {
+        margin-top: 100%;
+    }
+
+    100% {
+        margin-top: 0%;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-around;
     height: 30px;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-timing-function: 1;
 }
 
 .article {
     display: flex;
     flex-direction: row;
+    animation-name: up;
+    animation-duration: 1.5s;
+    animation-timing-function: 1;
 }
 
 .intro {
@@ -16,7 +32,7 @@
     align-items: end;
     width: 1920px;
     height: 1080px;
-    background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1908/Eiffel-Tower-Paris-France-night-lights-city_1920x1080.jpg');
+    background-image: url("../images/background.jpg");
 }
 
 .introTitle {
@@ -29,6 +45,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+}
+
+.board_Article > hr {
+    width: 90%;
 }
 
 .innerArticle {
@@ -37,9 +60,18 @@
     align-items: center;
 }
 
+.innerArticle > img {
+    width: 300px;
+    height: 300px;
+    margin: 30px 10px 0 10px;
+}
+
 .footer {
     display: flex;
-    justify-content: center;    
+    justify-content: space-around;
+    animation-name: up;
+    animation-duration: 2.5s;
+    animation-timing-function: 1;
 }
 
 #searchBox {
