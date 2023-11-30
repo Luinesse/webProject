@@ -15,7 +15,7 @@
             <div class="loginForm">
                 <input id="loginId" class="loginText" type="text" placeholder="아이디를 입력해주세요.">
                 <input id="loginPw" class="loginText" type="password" placeholder="비밀번호를 입력해주세요">
-                <input class="loginBtn" type="submit" value="로그인">
+                <input id="loginBtn" class="loginBtn" type="submit" value="로그인" disabled>
                 <div class="googleLogin">
                     <div id="g_id_onload" data-client_id="718698018851-femci8fqdvebrgimgc064g046kp37uav.apps.googleusercontent.com"
                         data-auto_prompt="false">
@@ -35,7 +35,7 @@
                     console.log(res.email);
                     console.log(res.name);
                     document.cookie = "name="+res.name;
-                    document.location = "./main.html";
+                    document.location.href = "./main.html";
                     }
                     window.onload = function () {
                     google.accounts.id.initialize({     //구글 계정으로 로그인 인스턴스를 생성
